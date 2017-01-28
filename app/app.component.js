@@ -19,7 +19,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         styles: ["h1 {\n\tcolor: white;\n\tbackground: darkgray;\n\tpadding: 20px;\n}\n"],
-        template: "\n\t    <meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\">\n\t\t<meta http-equiv=\"Pragma\" content=\"no-cache\">\n\t\t<meta http-equiv=\"Expires\" content=\"0\">\n\t\t<a [routerLink]=\"['/']\">Home</a> | <a [routerLink]=\"['/about/', { id: 2 }]\">About</a>\n\t\t<router-outlet></router-outlet>\n\t",
+        template: "\n\t    <meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\">\n\t\t<meta http-equiv=\"Pragma\" content=\"no-cache\">\n\t\t<meta http-equiv=\"Expires\" content=\"0\">\n\t\t<h1>{{name}}</h1>\n\t\t<a [routerLink]=\"['/']\">Home</a> | <a [routerLink]=\"['/about/', { id: 2 }]\">About</a>\n\t\t<router-outlet></router-outlet>\n\t",
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
