@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-    name: string = "Literature Lanturn";
+    name: string = "Literature Lantern";
 
     constructor() {}
 }
