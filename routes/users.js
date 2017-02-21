@@ -19,12 +19,7 @@ router.get('/', function(req, res, next) {
 	.then(function (rows){
 		res.json(rows);
 	});
-/**
-  res.json({
-    name: "Patrick",
-    last: "Turd"
-  });
- **/
+
 });
 
 

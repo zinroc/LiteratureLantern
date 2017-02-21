@@ -12,6 +12,7 @@ var app_component_1 = require("./app.component");
 var about_component_1 = require("./components/about/about.component");
 var routes_1 = require("./routes");
 var home_component_1 = require("./components/home/home.component");
+var login_component_1 = require("./components/login/login.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,8 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             about_component_1.AboutComponent,
-            home_component_1.HomeComponent
+            home_component_1.HomeComponent,
+            login_component_1.LoginComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

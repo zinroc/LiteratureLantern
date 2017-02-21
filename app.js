@@ -5,6 +5,8 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 
+
+var database_setup = require("./database_setup.js");
 var users = require('./routes/users');
 var app = express();
 
@@ -29,6 +31,10 @@ app.use(express.static("public"));
 
 app.use(express.static(path.join(__dirname, 'public'), options));
 app.use(express.static(path.join(__dirname, 'app')));
+
+database_setup.createTables().then(function () {
+  console.log("Tables Created...");
+});
 
 // Routes registration
 // ---
